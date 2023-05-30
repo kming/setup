@@ -8,4 +8,4 @@ rm -rf .oh-my-zsh
 ./third-party/fzf/uninstall
 
 rm ~/.zshrc
-
+rm ~/.p10k*
