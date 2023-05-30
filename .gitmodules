@@ -6,3 +6,7 @@
 	path = third-party/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "third-party/zsh-autosuggestions"]
+	path = third-party/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+	shallow = true

@@ -15,3 +15,4 @@ ln -s "${git_root}/third-party/powerlevel10k/" "${omz_root}/custom/themes/powerl
 # copy dotfiles
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
+cp "${git_root}/third-party/zsh-autosuggestions/zsh-autosuggestions.zsh" ~/.zsh-autosuggestions.zsh

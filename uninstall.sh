@@ -9,3 +9,4 @@ rm -rf .oh-my-zsh
 
 rm ~/.zshrc
 rm ~/.p10k*
+rm ~/.zsh-autosuggestions.zsh
