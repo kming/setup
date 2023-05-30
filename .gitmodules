@@ -1,0 +1,3 @@
+[submodule "third-party/fzf"]
+	path = third-party/fzf
+	url = https://github.com/junegunn/fzf.git
