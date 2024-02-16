@@ -114,4 +114,4 @@ source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.zsh-autosuggestions.zsh ]] || source ~/.zsh-autosuggestions.zsh
 
-[[ ! -f ~/.setup/alias-cmds/alias-cmds.zsh ]] || source ./.setup/alias-cmds/alias-cmds.zsh
+[[ ! -f ~/.setup/alias-cmds/alias-cmds.zsh ]] || source ~/.setup/alias-cmds/alias-cmds.zsh
