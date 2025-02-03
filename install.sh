@@ -9,7 +9,8 @@ if [ ! -n  `which zsh` ]; then
 fi
 
 git_root=`git rev-parse --show-toplevel`
-omz_root="${git_root}/.oh-my-zsh" 
+omz_root="${git_root}/.oh-my-zsh"
+alias_root="${git_root}/alias-cmds"
 
 # install oh-my-zsh
 RUNZSH=no ZSH="${omz_root}" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -24,3 +25,7 @@ ln -sf "${git_root}/third-party/powerlevel10k/" "${omz_root}/custom/themes/power
 cp .zshrc ~/.zshrc
 cp .p10k.zsh ~/.p10k.zsh
 cp "${git_root}/third-party/zsh-autosuggestions/zsh-autosuggestions.zsh" ~/.zsh-autosuggestions.zsh
+
+# Add folder for alias-cmds to path + add an alias to setting up the mds
+echo "export PATH=\"$alias_root:$PATH\"" >> ~/.zshrc
+echo "alias setup-alias-cmds=\"alias-cmds.zsh\"" >> ~/.zshrc

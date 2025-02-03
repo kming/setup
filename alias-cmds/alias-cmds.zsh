@@ -1,2 +1,2 @@
 #!/bin/zsh
-alias loop-cmd="${script_root}/alias-cmds/loop-cmd.zsh"
+alias lp-cmd="loop-cmd.zsh"
