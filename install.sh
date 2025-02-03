@@ -28,4 +28,4 @@ cp "${git_root}/third-party/zsh-autosuggestions/zsh-autosuggestions.zsh" ~/.zsh-
 
 # Add folder for alias-cmds to path + add an alias to setting up the mds
 echo "export PATH=\"$alias_root:$PATH\"" >> ~/.zshrc
-echo "alias setup-alias-cmds=\"alias-cmds.zsh\"" >> ~/.zshrc
+echo "alias sup-alias-cmds=\"source $alias_root/alias-cmds.zsh\"" >> ~/.zshrc
