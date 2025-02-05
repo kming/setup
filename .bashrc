@@ -5,7 +5,8 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH='/users/kkwong/.setup/.oh-my-bash'
+export SETUP_PATH="$HOME/.setup"
+export OSH="$SETUP_PATH/.oh-my-bash"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
