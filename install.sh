@@ -26,7 +26,7 @@ if [ -n $(which bash) ]; then
    # Save original
    cp ~/.bashrc .bashrc.orig
    # install oh-my-bash
-   OSH="${HOME}/.setup/.oh-my-bash" sh -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
+   OSH="${HOME}/.setup/.oh-my-bash" bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)" --unattended
    # copy dotfiles
    cp .bashrc ~/.bashrc
 fi

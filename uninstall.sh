@@ -2,7 +2,7 @@
 
 # Uninstall zsh setup
 if [ -n $(which zsh) ]; then
-    echo "Unnstalling zsh setup"
+    echo "Uninstalling zsh setup"
     # remove settings files
     rm ~/.zshrc
     rm ~/.p10k*
@@ -18,11 +18,11 @@ fi
 
 # Uninstall bash setup
 if [ -n $(which bash) ]; then
-    echo "Unnstalling bash setup"
+    echo "Uninstalling bash setup"
     # remove settings files
     rm ~/.bashrc
     # uninstall oh-my-bash
-    OSH="$HOME/.setup/.oh-my-bash" sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/uninstall.sh)"
+    OSH="$HOME/.setup/.oh-my-bash" bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/uninstall.sh)"
     rm -rf .oh-my-bash
     # If original exists, restore
     if [ -f .bashrc.orig ]; then
@@ -32,7 +32,7 @@ fi
 
 # Uninstall vim setup
 if [ -n $(which vim) ]; then
-    echo "Unnstalling vim setup"
+    echo "Uninstalling vim setup"
     # remove settings files
     rm ~/.vimrc
     # If original exists, restore
