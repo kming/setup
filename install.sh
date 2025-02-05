@@ -11,7 +11,7 @@ if [ -n $(which zsh) ]; then
    # install oh-my-zsh
    git_root=$(git rev-parse --show-toplevel)
    omz_root="${git_root}/.oh-my-zsh"
-   RUNZSH=no CHSH=no ZSH="${omz_root}" sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+   RUNZSH=no CHSH=no ZSH="${omz_root}" REPO=ohmyzsh/ohmyzsh sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
    # link powerlevel10k
    ln -sf "${git_root}/third-party/powerlevel10k/" "${omz_root}/custom/themes/powerlevel10k"
    # copy dotfiles

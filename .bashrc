@@ -149,3 +149,6 @@ fi
 
 # Source fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Source gitstatus
+[ -f $SETUP_PATH/third-party/gitstatus/gitstatus.prompt.sh ] && source $SETUP_PATH/third-party/gitstatus/gitstatus.prompt.sh

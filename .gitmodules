@@ -10,3 +10,6 @@
 	path = third-party/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
 	shallow = true
+[submodule "third-party/gitstatus"]
+	path = third-party/gitstatus
+	url = git@github.com:romkatv/gitstatus.git

@@ -120,3 +120,6 @@ fi
 [[ ! -f ~/.zsh-autosuggestions.zsh ]] || source ~/.zsh-autosuggestions.zsh
 
 [[ ! -f ~/.setup/alias-cmds/alias-cmds.zsh ]] || source ~/.setup/alias-cmds/alias-cmds.zsh
+
+# Source gitstatus
+[ -f $SETUP_PATH/third-party/gitstatus/gitstatus.prompt.zsh ] && source $SETUP_PATH/third-party/gitstatus/gitstatus.prompt.zsh
