@@ -1,1 +1,6 @@
+# Ignore shell themes
 .oh-my-zsh/
+.oh-my-bash/
+
+# Ignore generated backup files
+*.orig
