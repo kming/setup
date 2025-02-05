@@ -139,8 +139,12 @@ source "$OSH"/oh-my-bash.sh
 # users are encouraged to define aliases within the OSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# Setup custom aliases
 export PATH="$SETUP_PATH/alias-cmds:/users/kkwong/.setup/alias-cmds:$PATH"
-alias sup-alias-cmds="source $SETUP_PATH/alias-cmds/alias-cmds.zsh"
+if [ -f ~/.setup/alias-cmds/aliases.sh ]; then
+  alias sup-aliases="source $SETUP_PATH/alias-cmds/aliases.sh"
+  source $SETUP_PATH/alias-cmds/aliases.sh
+fi
+
+# Source fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[[ ! -f ~/.setup/alias-cmds/alias-cmds.sh ]] || source ~/.setup/alias-cmds/alias-cmds.sh

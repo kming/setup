@@ -103,10 +103,15 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-export PATH="$SETUP_PATH/alias-cmds:/users/kkwong/.setup/alias-cmds:$PATH"
-alias sup-alias-cmds="source $SETUP_PATH/alias-cmds/alias-cmds.zsh"
 
+# Setup custom aliases
+export PATH="$SETUP_PATH/alias-cmds:/users/kkwong/.setup/alias-cmds:$PATH"
+if [ -f ~/.setup/alias-cmds/aliases.sh ]; then
+  alias sup-aliases="source $SETUP_PATH/alias-cmds/aliases.sh"
+  source $SETUP_PATH/alias-cmds/aliases.sh
+fi
+
+# Source fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
