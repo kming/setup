@@ -4,7 +4,7 @@ set -eo pipefail
 main() {
     count=-1
     if ! [[ $# -gt 1 ]]; then
-        echo "Usage: loop-cmd.zsh <n> <cmd>"
+        echo "Usage: $0 <n> <cmd>"
         exit 1
     fi
     # Parse the arguments
